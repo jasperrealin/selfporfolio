@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kievo | About Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('image/background3.png') no-repeat center center/cover;
+      background-attachment: fixed; 
+      background-size: cover; 
+      max-height: 100vh;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;  
+      background-color: black;
+      border-bottom: 1px solid #ccc; 
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: white; 
+      font-size: 18px;
+      font-weight: 500;
+      position: relative;  
+      display: inline-block;  
+      transition: color 0.3s ease, transform 0.3s ease; 
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background-color: orange;
+      transition: width 0.3s ease; 
+    }
+
+    nav a:hover {
+      color: darkorange;  
+      transform: scale(1.1);  
+    }
+
+    nav a:hover::after {
+      width: 100%;  
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: calc(100vh - 100px);
+      padding: 0 50px;
+    }
+
+    .text {
+      max-width: 600px;
+      font-size: 32px;
+      line-height: 1.5;
+    }
+
+    .projects-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 48px;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: #222;
+      width: 250px;
+      height: 320px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    footer {
+      position: absolute;
+      left: 10px;
+      font-size: 14px;
+    }
+    
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    min-height: calc(100vh - 100px);
+  }
+
+  .contact-card {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .contact-card h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: orange;
+  }
+
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    background-color: #444;
+    outline: none;
+  }
+
+  .submit-btn {
+    background-color: orange;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+  }
+
+  /* ✅ Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-card {
+      padding: 30px 20px;
+    }
+
+    .contact-card h2 {
+      font-size: 28px;
+    }
+
+    .submit-btn {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .contact-card h2 {
+      font-size: 24px;
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="image/logo.jpg" alt="Logo" />
+      <span>Kievo</span>
+    </div>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="Skills.html">Skills</a>
+      <a href="Project.html">Project</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+  <section class="contact-section">
+    <div class="contact-card">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  

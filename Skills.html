@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kievo | About Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('image/background2.jpg') no-repeat center center/cover;
+      background-attachment: fixed; 
+      background-size: cover; 
+      max-height: 100vh;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;  
+      background-color: black;
+      border-bottom: 1px solid #ccc; 
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: white; 
+      font-size: 18px;
+      font-weight: 500;
+      position: relative;  
+      display: inline-block;  
+      transition: color 0.3s ease, transform 0.3s ease; 
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background-color: orange;
+      transition: width 0.3s ease; 
+    }
+
+    nav a:hover {
+      color: darkorange;  
+      transform: scale(1.1);  
+    }
+
+    nav a:hover::after {
+      width: 100%;  
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: calc(100vh - 100px);
+      padding: 0 50px;
+    }
+
+    .text {
+      max-width: 600px;
+      font-size: 32px;
+      line-height: 1.5;
+    }
+
+    .projects-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 48px;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: #222;
+      width: 250px;
+      height: 320px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px orange;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    footer {
+      position: absolute;
+      left: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="image/logo.jpg" alt="Logo" />
+      <span>Kievo</span>
+    </div>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="Skills.html">Skills</a>
+      <a href="Project.html">Project</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h2>SKILLS</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="image/skill1.jpg" alt="Skills" />
+        <p><strong>Description:</strong> Photography</p>
+        <p>Since highschool i like taking photos of the things that amaze or beautiful to me.</p>
+      </div>
+      <div class="project-card">
+        <img src="image/skill4.jpg" alt="Skills" />
+        <p><strong>Description:</strong> Billiards</p>
+        <p>I only started playing billiards when i was grade 12.</p>
+      </div>
+      <div class="project-card">
+        <img src="image/skill2.jpg" alt="Skills" />
+        <p><strong>Description:</strong> Moba Games</p>
+        <p>I started playing mobile games since 2016.</p>
+      </div>
+      <div class="project-card">
+        <img src="image/skill3.jpg" alt="Skills" />
+        <p><strong>Description:</strong> Moba Games</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
