@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #d14444;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-flex;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    background-color: #5a1317;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Sections */
+#featured, #sales, #regular, #contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 20px;
+}
+
+#featured h2, #sales h2, #regular h2, #contact h2, p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+/* Gallery */
+.gallery {
+    display: inline-block;
+    border: 2px solid #d8d8d8;
+    text-align: center;
+    width: 48%;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.gallery img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+figcaption {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+    border-top: 2px solid #d8d8d8;
+    width: 100%;
+    margin: 0;
+    background-color: #d8d8d8;
+    display: block;
+}
+
+/* contact info */
+form {
+    width: 100%;  
+    max-width: none;  
+    margin: 20px 0;  
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+#contact fieldset {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#contact legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contact label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea, #contact select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 20%;
+    padding: 10px; 
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: red;
+    color: white;
+}
+
+
+#contact input, 
+#contact textarea, 
+#contact select {
+    width: calc(100% - 16px); 
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #d14444;
+    color: white;
+}
